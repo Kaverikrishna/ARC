@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+
+  public interpol = "One Way Data-binding";
+
 }
