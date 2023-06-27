@@ -19,7 +19,8 @@
 </div>
 
 <div class="bg" style="padding:5px">
-    <h2> <label for="">One Way Data-Binding</label> {{interpol}}</h2>
+   <div style="margin: auto;"><h3> One Way Data-Binding {{interpol}}</h3></div>  <br>
+     <div style="margin: auto;"><h3 > Two Way Data-Binding {{twowaybind}}</h3></div>
 </div>
 <mat-divider></mat-divider>
 <form action="" #fm>
@@ -31,17 +32,13 @@
         <label> Event Binding </label>   <input matInput #event [hidden]="proname" />
     </mat-form-field>
     <button style="margin-left: 20px; margin-bottom: 5px;" mat-raised-button (click)="eventbind(event.value)" color="primary">Event Binding</button>
-            <mat-form-field style="margin-left: 35%;">
+          
+            <mat-form-field style="margin-left: 40%;">
                 <label for="">Two-Way binding</label>
-               <input matInput type="text" id="tw" name="twowaybinding" [(ngModel)]="twowaybind"> <br>  
-            </mat-form-field> <br>
-            <h4 style="margin-left: 35%;"> {{twowaybind}}</h4>
+               <input matInput type="text" id="tw" name="twowaybinding" [(ngModel)]="twowaybind"> 
+            </mat-form-field> 
+            
     <mat-divider></mat-divider>
    
 </form>
-
-
-
-
-
 
