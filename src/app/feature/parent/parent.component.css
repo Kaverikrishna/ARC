@@ -1,0 +1,12 @@
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    margin : 20px;
+}
+
+.mat-form-field {
+    margin : 5%
+}

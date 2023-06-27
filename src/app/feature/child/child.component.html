@@ -1,1 +1,24 @@
-<p>child works!</p>
+
+
+
+<div class="bg">
+    <div style="margin: auto">
+        <h2>Message form Parent ! {{childreceiver}}</h2>
+    </div>
+            
+   <br>
+    <form action="">
+        
+        <mat-form-field class="child">
+              <label for="forparent">Child Component</label>
+             <input matInput #output type="text">
+        </mat-form-field>
+          <button (click)="senddatatoparent(output.value)" mat-raised-button color="accent" >Send to Parent</button>
+    </form>
+
+</div>
+
+<mat-divider></mat-divider>
+
+
+

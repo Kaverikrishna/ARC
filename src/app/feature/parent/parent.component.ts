@@ -7,7 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
-  public messageformparent = "Hi! from Parent, Krishna";
+  public parentmessage : any;
+  public childmessage  : any;
+
+  senddatatoparent(value:any){
+   this.parentmessage = value;
+   console.log(value)
+  }
+
+  getdatafromchild(value:any){
+    this.childmessage = value;
+       console.log(value);
+  }
 
 
 }

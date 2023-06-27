@@ -1,5 +1,21 @@
 
+<div class="bg">
+    <br>
+    <form action="">
+        <mat-form-field class="parent">
+              <label for="forparent">Parent Component</label>
+             <input matInput #input type="text">
+        </mat-form-field>
+          <button (click)="senddatatoparent(input.value)" mat-raised-button color="primary" >Send to Child</button>
+    </form>
+
+    <div style="margin: auto">
+        <h2>Message form Child ! {{childmessage}}</h2>
+    </div>
+</div>
+               
+<div>
+    <app-child [childreceiver]="parentmessage" (childsender)="getdatafromchild($event)" ></app-child>
+</div>
 
 
-
-<h3>parent works!</h3>
