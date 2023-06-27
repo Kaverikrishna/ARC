@@ -7,6 +7,26 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
+    public name : string = '' ;
+  // Two-way binding
+     public twoway : any;
+     public twowaybind : any;
+  // Event binding
+  eventbind(val:any){
+      if(val == ''){
+        console.log("Empty Value");
+      }else{
+        alert("Event binding Successfull => " + val);
+      }
+  }
+
+  //Property binding
+  public proname = false ;
+
+  // Interpolation
+  public interpol : string = "Interpolation!";
+
+  //parent child
   public parentmessage : any;
   public childmessage  : any;
 
