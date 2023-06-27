@@ -6,22 +6,18 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit, OnDestroy, OnChanges{
+export class UserComponent implements OnInit, OnDestroy{
 
   
   constructor(private activatedRoute : ActivatedRoute){
-    
+       
   }
 
-  ngOnChanges(){
-     alert("Changes done");
-  }
 
   ngOnDestroy(): void {
-    alert("User dead")
   }
   ngOnInit(): void {
-    alert("User Created")
+
   }
 
 }

@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ParentComponent } from './feature/parent/parent.component';
+import { ChildComponent } from './feature/child/child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     UserComponent,
     HomeComponent,
     AdminComponent,
-    NotFoundComponentComponent
+    NotFoundComponentComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
